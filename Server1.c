@@ -183,13 +183,13 @@ void *Classify(void *arg)
         switch(Case)//分类讨论
 	{
                 case 1:
-			Register(cjson);
+			Register(cjson);//注册
                     	break;
                 case 2:
-                	Log_in(cjson);
+                	Log_in(cjson);//登陆
                 	break;
 		case 3:
-			Send_person(cjson);
+			Send_person(cjson);//发送私聊
 			break;
 	}
 	cJSON_Delete(cjson);//释放cJSON
